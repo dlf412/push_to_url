@@ -1,4 +1,5 @@
-目录结构
+# 目录结构
+```
 .
 ├── ChangeLog
 ├── demo
@@ -25,7 +26,7 @@
 ├── test
 └── tools
     └── config_update.py
-
+```
 
 
 mw_pusher: 推送模块主程序
@@ -39,17 +40,17 @@ tools: 工具集合目录
 setup.py: 安装脚本
 test: 测试代码目录
 
-安装:
+# 安装:
 1. 先安装requirements依赖
  * sudo pip install -r requirements
 2. python setup.py <mw_pusher|mw_repusher|all> -d install_dir [--autostart] [--upgrade|--rollback]
  * setup.py会按照etc/supervisor.conf的配置启动supervisord
 
-启动与停止
+# 启动与停止
 1. 用supervisorctl控制启动和停止
  supervisorctl -c ./etc/supervisor.conf reload  # 重启 supervisord 进程, 此步骤不是必须的，除非改动了etc/supervisor.conf文件
  supervisorctl -c ./etc/supervisor.conf start|stop|restart mw_pusher|mw_repusher|all
 
-升级与回滚
+# 升级与回滚
  * N/A
 
