@@ -1,6 +1,6 @@
 # 目录结构
+
 ```
-.
 ├── ChangeLog
 ├── demo
 │   ├── push_server.py
@@ -26,7 +26,6 @@
 ├── test
 └── tools
     └── config_update.py
-```
 
 
 mw_pusher: 推送模块主程序
@@ -39,6 +38,7 @@ ChangeLog: 记录了版本变更内容，最顶上为最新版本
 tools: 工具集合目录
 setup.py: 安装脚本
 test: 测试代码目录
+```
 
 # 安装:
 1. 先安装requirements依赖
